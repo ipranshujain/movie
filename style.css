@@ -3,10 +3,9 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(image/aks.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(assets/images/sacred-games/sacred-games-netflix.jpg);
     background-position: center;
     background-size: cover;
-
 }
 .logo{
     width: 150px;
@@ -35,12 +34,7 @@ body{
     margin: 15px 0;
     padding:20px ;
 }
-.casting img{
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
-    cursor: pointer;
-}
+
 .left-box a
 {
     text-decoration: none;
@@ -77,5 +71,51 @@ body{
 }
 .series img:hover{
     transform: translateY(-10px);
+}
+
+
+.casting{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+}
+.character {
+    padding: 10px;
+    border-radius: 20px;
+    margin:5px;
+    font-weight: bold;
+    z-index: 8;
 
 }
+
+.character img{
+    background-color: blue;
+    width: 130px !important;
+    height: 120px;
+}
+.imgmodel{
+    /* transition: 200ms height ease-in-out; */
+    height: 0px;
+    width:0px;    
+}
+.showimg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-position: center;
+    background-size:contain;
+    left: 0;
+    background-repeat: no-repeat !important;    
+    z-index: 10;
+    transition: 200ms height ease-in-out;
+}
+
+.movie-img{
+    width: 400px;
+    height: 400px;
+    transform: translate(-200px, -100px);
+}
+
+
